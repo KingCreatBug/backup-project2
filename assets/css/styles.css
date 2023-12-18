@@ -352,11 +352,11 @@ a {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 16px;
     margin-top: 76px;
+    /* padding-bottom: 57px; */
 }
 
 .service-item {
     width: 370px;
-    height: 245px;
     border-radius: 20px;
     transition: 0.25s;
 }
@@ -374,7 +374,7 @@ a {
 }
 
 .service-item__title {
-    padding-top: 24px;
+    padding: 24px 0 0 18px;
     font-family: Poppins;
     font-size: 2.2rem;
     font-weight: 600;
@@ -383,10 +383,220 @@ a {
 }
 
 .service-item__desc {
-    padding-top: 18px;
+    padding: 18px;
+    width: 268px;
     font-family: Poppins;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.71;
     color: #7d8188;
+}
+
+/* About */
+.about {
+    position: relative;
+    margin-top: 149px;
+}
+
+.about__extra {
+    position: absolute;
+    z-index: 1;
+}
+
+.about__extra--flower {
+    position: absolute;
+    top: -20px;
+    left: 40px;
+    z-index: 1;
+}
+
+.about__extra--line {
+    position: absolute;
+    top: 20px;
+    left: 77px;
+}
+
+.about__inner {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 64px;
+}
+
+.about__media {
+    position: relative;
+    width: 51%;
+}
+
+.about__media-images {
+    display: flex;
+    column-gap: 21px;
+}
+
+.about__media-images--img {
+    width: 284px;
+    height: 480px;
+    margin-top: 13px;
+    border-radius: 999px;
+    object-fit: cover;
+    box-shadow: 0px 4px 234px 11px rgba(59, 137, 71, 0.25);
+}
+
+.about__media-images--img:first-child {
+    margin-top: 77px;
+}
+
+.about__media-content {
+    position: absolute;
+    bottom: 8px;
+    right: -9px;
+    padding: 19px 23px 12px;
+    width: 143px;
+    height: 144px;
+    border-radius: 8px;
+    background: #fff;
+    transition: 0.25s;
+}
+
+.about__media-content:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 7px 54px 0px rgba(154, 154, 154, 0.25);
+}
+
+.about__media-content--title {
+    color: #152427;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.about__media-content--desc {
+    margin: 6px 0 10px;
+    color: #575d5e;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    opacity: 0.4;
+}
+
+.about__media-content--number,
+.about__media-content--load {
+    position: relative;
+    color: #152427;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.about__media-content--number::before {
+    position: absolute;
+    bottom: -4px;
+    display: inline-block;
+    content: "";
+    width: 40px;
+    height: 2px;
+    border-radius: 10px;
+    background: #83a17d;
+    z-index: 1;
+}
+
+.about__media-content--load {
+    text-align: end;
+    margin: 6px 0 3px;
+}
+
+.about__media-content--load::before {
+    position: absolute;
+    top: -4px;
+    left: 0;
+    display: inline-block;
+    content: "";
+    width: 96px;
+    height: 2px;
+    border-radius: 10px;
+    background: #eaeaea;
+}
+
+.about__team {
+    color: #152427;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.about__media-content--team {
+    right: 0;
+    display: flex;
+    margin-top: 5px;
+}
+
+.about__avatar {
+    margin-left: 30px;
+}
+
+.about__avatar--img {
+    margin-left: -10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about__sub-title {
+    position: relative;
+    margin: 0 0 20px 46px;
+    color: #152427;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.12;
+}
+
+.about__sub-title::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    left: -46px;
+    top: 9px;
+    width: 25px;
+    height: 1px;
+    background: #152427;
+}
+
+.about__content--desc {
+    margin-top: 11px;
+    color: #7d8188;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.62;
+}
+
+.about__data-top,
+.about__data-bot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #83a17d;
+}
+
+.about__data--number {
+    color: #152427;
+    font-family: Poppins;
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.23;
+}
+
+.about__data--desc {
+    width: 364px;
+    color: #7d8188;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.71;
+}
+
+.about__data-bot {
+    margin-top: 38px;
 }
