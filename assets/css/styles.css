@@ -178,6 +178,7 @@ a {
 
 .hero__img:nth-child(2) {
     margin-top: 77px;
+    box-shadow: 0px 4px 234px 11px rgba(59, 137, 71, 0.25);
 }
 
 .hero__media--blur {
@@ -283,4 +284,109 @@ a {
     font-size: 1.9rem;
     font-weight: 600;
     letter-spacing: 1.995px;
+}
+
+/* Service */
+.service {
+    margin-top: 106px;
+}
+
+.service__top {
+    display: flex;
+    align-items: center;
+}
+
+.service-top__title {
+    width: 45%;
+}
+
+.service__sub-title {
+    display: inline-block;
+    position: relative;
+    left: 46px;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.62;
+}
+
+.service__sub-title::before {
+    position: absolute;
+    top: 9px;
+    left: -46px;
+    width: 25px;
+    height: 1px;
+    display: inline-block;
+    content: "";
+    background: var(--primary-color);
+}
+
+.service__heading {
+    position: relative;
+    margin-top: 12px;
+}
+
+.service__heading::after {
+    position: absolute;
+    bottom: 19px;
+    right: 103px;
+    content: "";
+    width: 66px;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+.service-top__action {
+    display: flex;
+    margin-left: 422px;
+    column-gap: 17px;
+}
+
+.service-top__action:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.service__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+    margin-top: 76px;
+}
+
+.service-item {
+    width: 370px;
+    height: 245px;
+    border-radius: 20px;
+    transition: 0.25s;
+}
+
+.service-item:hover {
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+    transform: scale(1.1);
+}
+
+.service-item__thumb {
+    width: 370px;
+    height: 318px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.service-item__title {
+    padding-top: 24px;
+    font-family: Poppins;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--primary-color);
+}
+
+.service-item__desc {
+    padding-top: 18px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.71;
+    color: #7d8188;
 }
