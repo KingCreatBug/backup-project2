@@ -109,12 +109,12 @@ a {
 /* Header */
 .header {
     position: sticky;
-    top: -23px;
+    top: -15px;
     z-index: 4;
     padding-top: 28px;
     opacity: 0.8;
     background: #fff;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid var(--Scondery-color-gray);
 }
 
 .header__inner {
