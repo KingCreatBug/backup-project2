@@ -72,6 +72,9 @@ a {
 
 /* Header */
 .header {
+    position: sticky;
+    top: 0;
+    z-index: 4;
     margin-top: 28px;
     border-bottom: 1px solid #575d5e;
 }
@@ -1022,4 +1025,140 @@ a {
     padding-top: 16px;
     text-align: end;
     border-top: 1px solid #c4c4c4;
+}
+
+/* Footer */
+.footer {
+    margin-top: 102px;
+    background: #143c3c;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 72px 0 50px;
+}
+
+.footer-left {
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-left__heading {
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+.footer-form {
+    position: relative;
+    display: flex;
+    margin-top: 25px;
+    column-gap: 132px;
+}
+
+.footer-form::after {
+    position: absolute;
+    display: block;
+    top: 56px;
+    left: 10px;
+    content: "";
+    width: 354px;
+    height: 1px;
+    background: #6a8383;
+}
+
+.footer-form__input {
+    width: 212px;
+    height: 46px;
+    padding: 0 10px;
+    outline: none;
+    color: #fff;
+    border: none;
+    background: transparent;
+}
+
+.footer-form__input::placeholder {
+    color: #6a8383;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.footer-form__submit {
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.footer-left__social {
+    margin-top: 47px;
+    display: inline-flex;
+    column-gap: 22px;
+}
+
+.footer__social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #265252;
+    color: #fff;
+    transition: 0.25s;
+}
+
+.footer__social-btn:hover {
+    background: #a75325;
+}
+
+.footer-right {
+    display: flex;
+    column-gap: 70px;
+    font-family: "Public Sans", sans-serif;
+}
+
+.footer-right__list {
+    width: 78px;
+}
+
+.footer-right__list--title {
+    color: #fff;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.55;
+}
+
+.footer-list {
+    margin-top: 6px;
+}
+
+.footer__link {
+    color: #6a8383;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.25;
+}
+
+.footer__copyright {
+    text-align: center;
+}
+
+.footer__copyright-text {
+    padding-top: 30px;
+    color: #aab3ba;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    border-top: 1px solid;
+    border-color: linear-gradient(
+        90deg,
+        #143c3c 2.28%,
+        #295a5a 55.65%,
+        rgba(38, 82, 82, 0) 102.06%
+    );
 }
